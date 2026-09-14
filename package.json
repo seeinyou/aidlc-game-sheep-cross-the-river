@@ -1,0 +1,32 @@
+{
+  "name": "aidlc-game-sheep-cross-the-river",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.3.0"
+  },
+  "scripts": {
+    "test": "node --test test/domain.example.test.js test/domain.property.test.js test/domain.performance.test.js",
+    "test:example": "node --test test/domain.example.test.js",
+    "test:property": "node --test test/domain.property.test.js",
+    "test:performance": "node --test test/domain.performance.test.js",
+    "test:browser": "node --test test/browser.smoke.test.mjs",
+    "test:all": "npm test && npm run test:browser",
+    "check": "node scripts/check.mjs",
+    "sbom": "node scripts/generate-sbom.mjs",
+    "vendor:runtime": "node scripts/vendor-runtime.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.7.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.27.4",
+    "fast-check": "4.10.0",
+    "playwright": "1.63.0"
+  }
+}

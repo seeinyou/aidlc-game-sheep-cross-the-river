@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node.js dependencies and local developer tooling
+node_modules/
+.kiro/
+.DS_Store
